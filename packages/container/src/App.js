@@ -11,6 +11,13 @@ export default () => {
             paddingLeft: "118px",
           },
     }));
+
+    const displayDesktop = () => {
+      return <Toolbar > 
+      <div>VM -- CONTAINER PAGE FOR ALL THE APPS.</div>
+      </Toolbar>;
+    };
+
     return (
         <>
         <AppBar className={classes.header}>{displayDesktop()}</AppBar>

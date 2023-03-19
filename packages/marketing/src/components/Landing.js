@@ -17,7 +17,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <MaterialLink component={Link} to="/" color="inherit">
-        VIRGIN POC
+        VM MICRO FRONT END APP IMPLEMENTATION POC
       </MaterialLink>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -74,12 +74,11 @@ const useStyles = makeStyles((theme) => ({
 const netflix = [1];
 const disney = [1];
 const hotstar = [1];
+
 const displayDesktop = () => {
   return <Toolbar > 
-    {/* <img src={window.location.origin + '/public/assets/images/VM_Logo_White_optimised_large_8314779544.png'} alt="Logo" /> */}
-  <div >
-  Virgin Media -- SVOD PRODUCTS
-    </div></Toolbar>;
+  <div>VM -- PRODUCTS PAGE MICRO APP</div>
+  </Toolbar>;
 };
 
 
@@ -113,8 +112,7 @@ export default function Album() {
               align="center"
               color="textSecondary"
               paragraph
-            >
-              Virgin Media available SVOD Products
+            >VM available  Products
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">

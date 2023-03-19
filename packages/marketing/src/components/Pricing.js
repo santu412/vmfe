@@ -12,6 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import { Link as RouterLink } from 'react-router-dom';
+import { AppBar, Toolbar } from "@material-ui/core";
 
 function Copyright() {
   return (
@@ -66,6 +67,11 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       paddingTop: theme.spacing(6),
       paddingBottom: theme.spacing(6),
+    },
+    header: {
+      backgroundColor: "red",
+      paddingRight: "20em",
+      paddingLeft: "118px",
     },
   },
 }));
@@ -139,12 +145,23 @@ const footers = [
   },
 ];
 
+const displayDesktop = () => {
+  return <Toolbar > 
+  <div>VM -- AVAILABLE PROCUCTS PRICING</div>
+  </Toolbar>;
+};
+
+
 export default function Pricing() {
   const classes = useStyles();
 
   return (
     <React.Fragment>
       {/* Hero unit */}
+      <header>
+        
+        <AppBar className={classes.header}>{displayDesktop()}</AppBar>
+      </header>
       <Container maxWidth="sm" component="main" className={classes.heroContent}>
         <Typography
           component="h1"
