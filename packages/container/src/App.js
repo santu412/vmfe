@@ -14,7 +14,7 @@ export default () => {
 
     const displayDesktop = () => {
       return <Toolbar > 
-      <div>VM -- CONTAINER PAGE FOR ALL THE APPS.</div>
+      <div>VM --- CONTAINER PAGE FOR ALL THE APPS.</div>
       </Toolbar>;
     };
 
