@@ -19,4 +19,4 @@ const prodConfig = {
     ]
 };
 
-module.exports = merge(commonConfig, devConfig);
+module.exports = merge(commonConfig, prodConfig);
