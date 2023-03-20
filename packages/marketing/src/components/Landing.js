@@ -57,8 +57,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
+    padding: theme.spacing(4),
+    backgroundColor: "red",
   },
   header: {
     backgroundColor: "red",
@@ -119,13 +119,6 @@ export default function Album() {
                 <Grid   >
                   <Link to="/pricing">
                     <Button variant="contained" color="primary">
-                      Pricing
-                    </Button>
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link to="/pricing">
-                    <Button variant="outlined" color="primary">
                       Pricing
                     </Button>
                   </Link>

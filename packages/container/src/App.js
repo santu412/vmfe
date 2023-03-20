@@ -1,11 +1,11 @@
 import React from 'react';
 import MarketingApp from './components/MarketingApp';
 import { AppBar, Toolbar } from "@material-ui/core";
-
+import { makeStyles } from '@material-ui/core/styles';
 
 export default () => {
-    const classes = useStyles((theme) => ({
-        header: {
+    const classes = makeStyles((theme) => ({
+        headercontainer: {
             backgroundColor: "red",
             paddingRight: "20em",
             paddingLeft: "118px",
@@ -20,8 +20,9 @@ export default () => {
 
     return (
         <>
-        <AppBar className={classes.header}>{displayDesktop()}</AppBar>
         <MarketingApp/>
+        <AppBar className={classes.headercontainer}>{displayDesktop()}</AppBar>
+      
       </>
 );
 };
