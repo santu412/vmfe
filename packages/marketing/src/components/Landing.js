@@ -92,7 +92,7 @@ export default function Album() {
 
         <header>
         
-        <AppBar className={classes.header}>{displayDesktop()}</AppBar>
+        {/* <AppBar className={classes.header}>{displayDesktop()}</AppBar> */}
       </header>
 
         {/* Hero unit */}

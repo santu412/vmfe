@@ -4,6 +4,7 @@ import { AppBar, Toolbar } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import { StylesProvider, createGenerateClassName } from  '@material-ui/core/styles';
 import { BrowserRouter } from 'react-router-dom';
+import  Header  from './components/Header';
 
 const generateClassName=  createGenerateClassName({
   productionPrefix: 'co'
@@ -31,8 +32,9 @@ export default () => {
         <BrowserRouter>
         <StylesProvider generateClassName={generateClassName}>
         <div>
+          <Header/>
         <MarketingApp/>
-        <AppBar className={classes.headercontainer}>{displayDesktop()}</AppBar>
+        {/* <AppBar className={classes.headercontainer}>{displayDesktop()}</AppBar> */}
       
         </div>
         </StylesProvider>

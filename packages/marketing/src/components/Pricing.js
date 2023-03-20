@@ -160,7 +160,7 @@ export default function Pricing() {
       {/* Hero unit */}
       <header>
         
-        <AppBar className={classes.header}>{displayDesktop()}</AppBar>
+        {/* <AppBar className={classes.header}>{displayDesktop()}</AppBar> */}
       </header>
       <Container maxWidth="sm" component="main" className={classes.heroContent}>
         <Typography
